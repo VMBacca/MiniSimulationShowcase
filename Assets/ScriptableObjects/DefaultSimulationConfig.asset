@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1ecdee8438a4a4faeae78048c98079, type: 3}
+  m_Name: DefaultSimulationConfig
+  m_EditorClassIdentifier: 
+  gridWidth: 8
+  gridDepth: 8
+  cellSize: 1.5
+  maxObjects: 50
+  spawnPrefabs:
+  - {fileID: 4072388847888998310, guid: 7dfa024c7807b2f4b8694e41649260b1, type: 3}
+  - {fileID: 5414329971539725462, guid: 8fdfd29ac13995942882cec2b7a9ae31, type: 3}
+  - {fileID: 3634743970689666891, guid: 69a1624fcab78f142b8981f8fa0222de, type: 3}
+  spawnInterval: 0.4
