@@ -43,7 +43,8 @@ Both modes:
 
 ## Screenshots
 
-
+![Static Scene](Screenshots/Menu.png)  
+![Dynamic Scene](Screenshots/Dynamic.png)
 
 ---
 
