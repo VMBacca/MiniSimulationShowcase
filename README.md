@@ -11,6 +11,10 @@ This project showcases **two types of object spawning simulations**:
 1. **Static Mode** – Objects are instantiated once in a grid and reused.
 2. **Dynamic Mode** – Objects are continuously spawned; oldest objects are deleted when a limit is reached.
 
+<p align="center">
+  <img src="Screenshots/GIFMedia.gif" width="600">
+</p>
+
 Both modes:
 
 - Avoid overlapping objects using a **grid system**  
