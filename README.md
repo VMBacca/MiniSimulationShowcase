@@ -48,6 +48,34 @@ Both modes:
 
 ---
 
+## How to Run
+
+Unity Version: 2023.3 (or your project’s exact version)
+
+Steps:
+
+1.Clone the Repository:
+
+- git clone https://github.com/YourUsername/MiniSimulationShowcase.git
+
+2.Open in Unity:
+- Launch Unity Hub.
+- Click Add Project, navigate to the cloned folder, and open it.
+
+3.Open Start Scene:
+- In the Project window, navigate to Assets/Scenes/StartScene.unity.
+- Double-click to open.
+
+4.Run the Simulation:
+- Press the Play button in Unity.
+- Use the UI buttons to switch between **Static** and **Dynamic** modes.
+- Watch live object counts update via the ObjectCounter UI.
+
+5.Quit / Stop:
+- Click Quit in the UI to exit the simulation, or press the Stop button in Unity Editor to stop play mode.
+
+---
+
 ## Future Improvements
 
 - Add more prefab types  
