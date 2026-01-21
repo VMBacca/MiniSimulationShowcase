@@ -16,7 +16,6 @@ public class DynamicSimulationController : MonoBehaviour
 
     private void Start()
     {
-        // Defensive checks
         if (config == null)
         {
             Debug.LogError("SimulationConfig not assigned", this);
@@ -36,12 +35,10 @@ public class DynamicSimulationController : MonoBehaviour
             spawnParent = transform;
         }
 
-        // Initialize helpers
         grid = new GridSystem(config.gridWidth, config.gridDepth, config.cellSize, Vector3.zero);
         activeObjects = new Queue<GameObject>();
         colorProvider = new ColorProvider();
 
-        // Initial counter
         counterUI.UpdateCounter(activeObjects.Count, config.maxObjects);
     }
 
@@ -58,23 +55,19 @@ public class DynamicSimulationController : MonoBehaviour
 
     private void SpawnStep()
     {
-        // Enforce max object limit (FIFO)
+        // Enforce max object limit (Firs In First Out)
         if (activeObjects.Count >= config.maxObjects)
         {
             RemoveOldest();
         }
 
-        // Try to get a free grid position
         if (!grid.TryGetFreePosition(out Vector3 position))
             return;
 
-        // Choose prefab
         GameObject prefab = config.spawnPrefabs[Random.Range(0, config.spawnPrefabs.Length)];
 
-        // Instantiate
         GameObject obj = Instantiate(prefab, position, Quaternion.identity, spawnParent);
 
-        // Initialize spawned object
         SpawnedObject spawned = obj.GetComponent<SpawnedObject>();
         if (spawned != null)
         {
@@ -83,7 +76,6 @@ public class DynamicSimulationController : MonoBehaviour
 
         activeObjects.Enqueue(obj);
 
-        // Update counter
         counterUI.UpdateCounter(activeObjects.Count, config.maxObjects);
     }
 

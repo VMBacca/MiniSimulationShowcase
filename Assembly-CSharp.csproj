@@ -59,7 +59,6 @@
     <Compile Include="Assets\Scripts\UI\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\UI\StartUIController.cs" />
     <Compile Include="Assets\Scripts\Core\Interfaces\IGridProvider.cs" />
-    <Compile Include="Assets\Scripts\Core\Interfaces\ILifecycleController.cs" />
     <Compile Include="Assets\Scripts\Core\Interfaces\ISpawner.cs" />
     <Compile Include="Assets\Scripts\Core\Config\SimulationConfig.cs" />
     <Compile Include="Assets\Scripts\Simulation\Static\StaticSimulationController.cs" />
