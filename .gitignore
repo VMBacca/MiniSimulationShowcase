@@ -1,11 +1,45 @@
+# ========== Unity Generated ==========
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+[Ll]ogs/
 [Mm]emoryCaptures/
+
+# ========== Visual Studio / IDE ==========
 .vs/
 *.csproj
+*.unityproj
 *.sln
+*.suo
 *.user
 *.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# ========== OS Files ==========
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ========== Unity Cache ==========
+*.apk
+*.aab
+*.unitypackage
+
+# ========== Ignore temporary settings ==========
+UserSettings/
